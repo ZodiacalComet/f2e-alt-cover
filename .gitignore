@@ -1,0 +1,8 @@
+# Python
+*.pyc
+
+# Test directories
+tests
+
+# Editable installation directory
+fimfic2epub_cover_patch.egg-info
