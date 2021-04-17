@@ -208,8 +208,8 @@ def main():
     args = parser.parse_args()
     log.setLevel(logging.DEBUG if args.debug else logging.INFO)
 
-    alt_excutable = args.fimfic2epub_executable
-    if not alt_excutable == DEFAULT_EXECUTABLE:
+    excutable = args.fimfic2epub_executable
+    if not excutable == DEFAULT_EXECUTABLE:
         if not os.path.isfile(alt_excutable):
             log.error("%s doesn't exist.", repr(alt_excutable))
             logged_exit(1)
@@ -219,7 +219,7 @@ def main():
         if args.story.isnumeric()
         else re.match(FIMFIC_STORY_URL_REGEX, args.story).groupdict()["ID"]
     )
-    cmd = ["fimfic2epub.cmd", story_id]
+    cmd = [excutable, story_id]
 
     output_name = args.fimfic2epub_filename
     if output_name:
