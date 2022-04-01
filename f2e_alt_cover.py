@@ -213,11 +213,15 @@ def main():
             log.error("%s doesn't exist.", repr(executable))
             logged_exit(1)
 
-    story_id = (
-        args.story
-        if args.story.isnumeric()
-        else re.match(FIMFIC_STORY_URL_REGEX, args.story).groupdict()["ID"]
-    )
+    story_id = args.story
+    if not story_id.isnumeric():
+        m = re.match(FIMFIC_STORY_URL_REGEX, args.story)
+        if not m:
+            log.error("%s doesn't seem like a story ID nor a Fimfiction URL", story_id)
+            logged_exit(1)
+
+        story_id = m.groupdict()["ID"]
+
     cmd = [executable, story_id]
 
     output_name = args.fimfic2epub_filename
