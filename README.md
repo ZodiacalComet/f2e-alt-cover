@@ -8,7 +8,7 @@ Mainly made for personal use, but if someone else finds themselves needing it he
 
 ## Acknowledgments
 
-- [fimfic2epub]: Chrome/Firefox extension & npm package for improved EPUB export on fimfiction.net
+- **[fimfic2epub]**: Chrome/Firefox extension & npm package for improved EPUB export on fimfiction.net
 
     For allowing to have good epub formatted Fimfiction stories! Specially for offline reading.
 
