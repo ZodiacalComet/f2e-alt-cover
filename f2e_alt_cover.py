@@ -118,8 +118,7 @@ def create_placeholder_cover(
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Wrapper around fimfic2epub's CLI to handle stories "
-        "without a cover.",
+        description="A wrapper script that replaces the default cover of fimfic2epub.",
         add_help=False,
     )
     parser.add_argument(

@@ -13,9 +13,9 @@ import re
 from setuptools import setup
 
 # Package meta-data.
-NAME = "fimfic2epub-cover-patch"
-DESCRIPTION = "Wrapper around fimfic2epub's CLI to handle stories without a cover."
-URL = "https://github.com/ZodiacalComet/fimfic2epub-cover-patch"
+NAME = "f2e-alt-cover"
+DESCRIPTION = "A wrapper script that replaces the default cover of fimfic2epub."
+URL = "https://github.com/ZodiacalComet/f2e-alt-cover"
 AUTHOR = "ZodiacalComet"
 EMAIL = "ZodiacalComet@gmail.com"
 REQUIRES_PYTHON = ">=3.7.0"
@@ -33,7 +33,7 @@ with open(os.path.join(ROOT_DIR, "requirements.txt")) as fd:
     REQUIRED = fd.read().splitlines()
 
 
-# Acquiring version from fimfic2epub_cover_patch.py file.
+# Acquiring version from f2e_alt_cover.py file.
 VERSION = ""
 VERSION_FILE = os.path.join(ROOT_DIR, f"{PROJECT_SLUG}.py")
 

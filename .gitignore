@@ -5,4 +5,4 @@
 tests
 
 # Editable installation directory
-fimfic2epub_cover_patch.egg-info
+*.egg-info

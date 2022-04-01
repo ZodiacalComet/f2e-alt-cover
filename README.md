@@ -1,6 +1,6 @@
-# fimfic2epub-cover-patch
+# f2e-alt-cover
 
-A simple and messy CLI to handle an error with canvas in [fimfic2epub] while using its CLI to download a [Fimfiction] story that doesn't have a cover.
+A messy wrapper script that replaces the default cover for [fimfic2epub] with one that has a black background and white text.
 
 Requires [fimfic2epub] to be installed, obiously.
 
