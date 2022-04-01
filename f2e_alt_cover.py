@@ -209,8 +209,8 @@ def main():
 
     excutable = args.fimfic2epub_executable
     if not excutable == DEFAULT_EXECUTABLE:
-        if not os.path.isfile(alt_excutable):
-            log.error("%s doesn't exist.", repr(alt_excutable))
+        if not os.path.isfile(excutable):
+            log.error("%s doesn't exist.", repr(excutable))
             logged_exit(1)
 
     story_id = (
